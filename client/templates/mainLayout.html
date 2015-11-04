@@ -1,0 +1,27 @@
+<head>
+  <title>Mended - a place to *really* own your health</title>
+</head>
+
+<body>
+  <div class="ui fixed menu">
+    <a href="/" class="header item">
+      Mended
+    </a>
+    <a href="/about" class="header item">
+      About
+    </a>
+    <span class="item">
+      {{> loginButtons}}
+    </span>
+    <span class="right item">
+      CTP $34.54 :: DRG $67.23
+    </span>
+  </div>
+</body>
+
+<template name="mainLayout">
+  <div class="main ui container">
+    {{> Template.dynamic template=h1}}
+    {{> Template.dynamic template=mainContent}}
+  </div>
+</template>
