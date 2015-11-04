@@ -6,12 +6,10 @@
 
 // console.log('getActivities', getActivities);
 
-// Template.home.events({
-//   'submit form': function (event) {
-//     event.preventDefault();
-//     console.log('hello!!!');
-//   }
-// });
-
-
-Meteor.subscribe('getCashPrices');
+Template.home.events({
+  'click .button.getCash': function (event) {
+    event.preventDefault();
+    console.log('hello!!!');
+  Meteor.call('getCashPrices');
+  }
+});
