@@ -14,7 +14,7 @@
       {{> loginButtons}}
     </span>
     <span class="right item">
-      CTP $34.54 :: DRG $67.23
+      {{> myIndices}}
     </span>
   </div>
 </body>
@@ -24,4 +24,8 @@
     {{> Template.dynamic template=h1}}
     {{> Template.dynamic template=mainContent}}
   </div>
+</template>
+
+<template name="myIndices">
+  CTP ${{cptIndex}} :: DRG ${{drgIndex}}
 </template>
